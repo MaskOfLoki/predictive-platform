@@ -1,0 +1,83 @@
+@import "../../utils/utils";
+
+.username-screen {
+  @extend .base-screen;
+  background: rgb(238, 238, 238);
+  color: black;
+  overflow-y: auto;
+
+  .group-left {
+    .logo {
+      width: 13vw !important;
+    }
+    .group-logo-info {
+      position: absolute;
+      width: 100vw;
+      text-align: center;
+      font-size: 5vw;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+  .group-username {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30%;
+
+    span {
+      font-weight: bold;
+      font-size: 4vw;
+      margin-bottom: 1%;
+    }
+
+    input {
+      margin-top: 2%;
+      margin-bottom: 3%;
+      width: 90%;
+
+      border: solid 1px #555;
+      background: #eee;
+      border-radius: 1vw;
+      padding-left: 5%;
+      padding-right: 5%;
+      font-size: 5vw;
+      color: black;
+      line-height: 10vw;
+
+      &[type='checkbox'] {
+        margin-right: 4%;
+        width: 10vw;
+        height: 10vw;
+      }
+    }
+
+    .gc-button {
+      margin-top: 2%;
+      font-size: 5vw;
+      width: 55vw;
+      line-height: 10vw;
+      margin-left: 12.5vw;
+      margin-top: 5vw;
+    }
+
+    .checkbox-text {
+      display: inline-block;
+      font-size: 3.3vw;
+      font-weight: normal;
+      width: 80%;
+
+      &.large {
+        font-size: 5.3vw;
+      }
+    }
+  }
+
+  label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

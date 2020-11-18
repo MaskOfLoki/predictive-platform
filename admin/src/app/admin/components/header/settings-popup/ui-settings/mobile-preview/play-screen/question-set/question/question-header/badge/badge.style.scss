@@ -1,0 +1,19 @@
+.gc-mobile-question-badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  min-width: fit-content;
+  height: fit-content;
+  border-radius: 2px;
+  color: whitesmoke;
+  margin-left: 0.4vw;
+  margin-right: 0.5vw;
+  font-size: 0.5vw;
+  padding: 0.3vw;
+
+  &.black {
+    color: black;
+  }
+}

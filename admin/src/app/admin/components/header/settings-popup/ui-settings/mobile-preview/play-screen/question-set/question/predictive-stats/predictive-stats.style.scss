@@ -1,0 +1,86 @@
+.gc-predictive-stats {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+  .stat-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 0.2vw;
+    overflow: hidden;
+
+    .icon {
+      position: absolute;
+      width: 1.5vw;
+      height: 1.5vw;
+      top: 2vw;
+      right: 1vw;
+    }
+
+    .stats {
+      background: rgba(155, 155, 155, 0.3);
+      .fill {
+        background: rgba(155, 155, 155, 0.6);
+      }
+    }
+
+    &.current-user {
+      border: solid white 4px;
+      margin-left: -1vw;
+    }
+
+    &.correct {
+      border: solid #00B21B 4px;
+
+      .icon {
+        background: url("../../../../../../../../../../../assets/images/admin/mobile-preview/correct.svg") no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    &.incorrect {
+      border: solid #BA0000 4px;
+
+      .icon {
+        background: url("../../../../../../../../../../../assets/images/admin/mobile-preview/wrong.svg") no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    .answer {
+      margin-top: 0.3vw;
+      margin-left: 0.3vw;
+      margin-bottom: 0.3vw;
+    }
+
+    .stats {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      font-size: 0.6vw;
+
+      .fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+      }
+
+      .percentage {
+        z-index: 100;
+        margin-left: 0.3vw;
+        margin-right: 0.3vw;
+      }
+
+      .bucks {
+        z-index: 100;
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.gc-mobile-preview {
+  height: 100%;
+
+  .mobile-preview-group-tabs {
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+    width: 100%;
+
+    .tab {
+      background: #142C53;
+      height: 68%;
+      text-align: center;
+      border-top-left-radius: 0.4vw;
+      border-top-right-radius: 0.4vw;
+      margin-right: 3%;
+      cursor: pointer;
+      padding-top: 0.5vw;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      width: fit-content;
+      min-width: fit-content;
+      font-size: 63%;
+
+      &.active {
+        background: #1b3a6f;
+      }
+    }
+  }
+
+  .mobile-screen-container {
+    height: 95%;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    .mobile-screen {
+      position: relative;
+      width: 96%;
+      height: 96%;
+      left: 2%;
+      top: 2%;
+      background: repeat-y center;
+      background-size: contain;
+
+      .mobile-subscreen {
+        height: 90%;
+      }
+    }
+  }
+}

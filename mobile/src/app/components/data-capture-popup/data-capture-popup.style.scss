@@ -1,0 +1,52 @@
+.data-capture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .data-capture-popup {
+    width: 90%;
+    height: fit-content;
+    border: 1 px solid black;
+    background-color: whitesmoke;
+    color: black;
+
+    .margin {
+      margin: 5%;
+
+      .message {
+        text-align: center;
+        margin-bottom: 5%;
+      }
+
+      .inputs {
+        .input {
+          border: 1 px solid black;
+          background-color: whitesmoke;
+          color: black;
+          margin-bottom: 5%;
+
+          input {
+            width: 95%;
+          }
+        }
+      }
+
+      .controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+          width: 47%;
+          height: 5vh;
+          border: none;
+          border-radius: 5px;
+          background-color: black;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}

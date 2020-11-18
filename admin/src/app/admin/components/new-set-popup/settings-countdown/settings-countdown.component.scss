@@ -1,0 +1,16 @@
+.gc-settings-countdown {
+  display: flex;
+  flex-direction: row;
+
+  .group-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1vw;
+
+    input {
+      font-size: 1vw;
+      width: 6vw;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.gc-settings-range {
+  display: flex;
+  flex-direction: column;
+
+  .group-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+
+    input {
+      font-size: 1vw;
+      width: 10vw;
+      text-align: center;
+    }
+  }
+}

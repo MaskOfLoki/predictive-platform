@@ -1,0 +1,73 @@
+.gc-stats {
+  width: 90vw;
+  margin-left: 3vw;
+  background: #081429;
+  border: #458BFF solid 2px;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2vw;
+  justify-content: space-between;
+
+  .icon {
+    width: 8vw;
+    height: 8vw;
+    margin-right: 2vw;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #458BFF;
+
+      .icon-dollar {
+        @extend .icon;
+        mask: url("../../../../../assets/images/dollar.svg") no-repeat center;
+        mask-size: contain;
+        -webkit-mask: url("../../../../../assets/images/dollar.svg") no-repeat center;
+        -webkit-mask-size: contain;
+      }
+
+      .icon-rank {
+        @extend .icon;
+        mask: url("../../../../../assets/images/leader.svg") no-repeat center;
+        mask-size: contain;
+        -webkit-mask: url("../../../../../assets/images/leader.svg") no-repeat center;
+        -webkit-mask-size: contain;
+      }
+
+      .icon-checkmark {
+        @extend .icon;
+        mask: url("../../../../../assets/images/checkmark.svg") no-repeat center;
+        mask-size: contain;
+        -webkit-mask: url("../../../../../assets/images/checkmark.svg") no-repeat center;
+        -webkit-mask-size: contain;
+      }
+
+      .label {
+        width: 18vw;
+      }
+    }
+
+    .line {
+      margin-top: 1vw;
+      margin-bottom: 1vw;
+      background: #458BFF;
+      height: 1px;
+      width: 100%;
+    }
+
+    .value {
+      font-weight: bold;
+      color: white;
+      font-size: 5vw;
+    }
+  }
+}

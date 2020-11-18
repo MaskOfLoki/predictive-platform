@@ -1,0 +1,82 @@
+.gc-mobile-question-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 2vw;
+  align-items: center;
+  color: #458BFF;
+  font-size: 1vw;
+  justify-content: space-between;
+
+  .group-timer {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    align-items: center;
+    margin-right: 5%;
+    width: 25%;
+
+    .icon-timer {
+      mask: url("../../../../../../../../../../../assets/images/admin/mobile-preview/icon-timer.svg") no-repeat center;
+      mask-size: contain;
+      -webkit-mask: url("../../../../../../../../../../../assets/images/admin/mobile-preview/icon-timer.svg") no-repeat center;
+      -webkit-mask-size: contain;
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+  }
+
+  .locked {
+    margin-right: 5%;
+    width: 25%;
+    text-align: right;
+  }
+
+  .label {
+    margin-right: 1vw;
+    font-size: 0.4vw;
+    min-width: 30%;
+    max-width: 30%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &.title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &.incorrect {
+      color: #BA0000;
+      font-weight: bold;
+      font-size: 5vw;
+      max-width: fit-content;
+      width: fit-content;
+      text-align: right;
+    }
+
+    &.payout {
+      font-weight: bold;
+      font-size: 5vw;
+      color: #00B21B;
+      max-width: fit-content;
+      width: fit-content;
+      text-align: right;
+    }
+
+    .bucks {
+      font-size: 3vw;
+    }
+
+    &.pushed {
+      font-weight: bold;
+      font-size: 4vw;
+      color: #FFD800;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

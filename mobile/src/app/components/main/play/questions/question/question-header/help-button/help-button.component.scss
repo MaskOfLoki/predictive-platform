@@ -1,0 +1,17 @@
+.gc-help-button {
+  color: white;
+  font-weight: bold;
+  background: #458BFF;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

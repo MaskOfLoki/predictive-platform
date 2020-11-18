@@ -1,0 +1,68 @@
+.gc-prize-holder {
+  display: flex;
+  flex-direction: row;
+  width: 94%;
+  height: 3vw;
+  min-height: 3vw;
+  background: #3660AA;
+  margin-top: 0.5vw;
+  margin-left: 1vw;
+  border-radius: 0.5vw;
+  align-items: center;
+  opacity: 0;
+  animation: tween-show 0.2s forwards;
+  cursor: pointer;
+
+  .badge {
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5vw;
+    font-family: "Gotham Book", serif;
+    overflow: hidden;
+
+    .subtitle {
+      font-size: 0.7vw;
+    }
+
+    &.overall {
+      background: #8900B2;
+    }
+
+    &.event {
+      background: #B20067;
+    }
+
+    &.set {
+      background: #00A319;
+    }
+  }
+
+  .phone,
+  .email {
+    margin-right: 1vw;
+  }
+
+  .username,
+  .points {
+    margin-left: 1%;
+    flex: 1;
+    user-select: text;
+  }
+
+  .gc-button {
+    margin-right: 1%;
+  }
+
+  @keyframes tween-show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

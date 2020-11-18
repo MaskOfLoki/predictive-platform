@@ -1,0 +1,68 @@
+@import "../../../../../utils/utils";
+
+.gc-live-question {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  background: #0A1C3A;
+  margin-bottom: 2%;
+  padding-bottom: 4vw;
+  border-radius: 1vw;
+  border: #458BFF solid 2px;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  align-items: center;
+
+  .group-header {
+    margin-top: 3%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    justify-content: space-between;
+    color: #458BFF;
+    margin-bottom: 2%;
+
+    .group-timer {
+      display: flex;
+      flex-direction: row;
+
+      .icon-timer {
+        background: url("../../../../../../assets/images/icon-timer.svg") no-repeat center;
+        background-size: contain;
+        width: 10vw;
+        height: 100%;
+      }
+    }
+  }
+
+  .gc-button {
+    width: 50%;
+    font-weight: bold;
+    height: 8vw;
+    margin-bottom: 2vw;
+  }
+
+
+  .text {
+    font-weight: bold;
+    font-size: 5vw;
+    text-align: center;
+    width: 90%;
+  }
+
+  .subheader {
+    font-weight: normal;
+    font-size: 4vw;
+    text-align: center;
+    width: 90%;
+  }
+
+  .gc-answer-input {
+    width: 50%;
+
+    .gc-input {
+      font-size: 10vw;
+    }
+  }
+}

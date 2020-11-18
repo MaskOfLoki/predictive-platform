@@ -1,0 +1,72 @@
+@import '../../../utils/utils';
+
+.gc-header {
+  width: 100%;
+  height: 14vw;
+  max-height: 14vw;
+  min-height: 14vw;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2vw solid #448af9;
+
+  .group-left {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+
+    .logo {
+      background: no-repeat center;
+      background-size: contain;
+      width: 15vw;
+      height: 90%;
+      margin-right: 1vw;
+      margin-left: 1vw;
+    }
+
+    .group-user-info {
+      display: flex;
+      flex-direction: column;
+
+      .bucks {
+        font-weight: bold;
+      }
+
+      .username,
+      .bucks,
+      .position {
+        opacity: 0;
+        animation: fade-in 0.5s forwards;
+        font-size: 3vw;
+      }
+    }
+  }
+
+  .group-tabs {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-right: 3vw;
+
+    .tab {
+      background: black;
+      height: 100%;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 18vw;
+      border-top-left-radius: 2vw;
+      border-top-right-radius: 2vw;
+      cursor: pointer;
+
+      &.active {
+        background: #458bff;
+      }
+    }
+  }
+}

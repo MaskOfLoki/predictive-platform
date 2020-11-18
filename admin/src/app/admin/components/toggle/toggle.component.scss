@@ -1,0 +1,17 @@
+.gc-toggle {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+
+  span {
+    margin-left: 0.5vw;
+  }
+
+  .toggle-image {
+    width: 1.5vw;
+    height: 1.5vw;
+    background: no-repeat center;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,143 @@
+.gc-marketing-message-popup {
+  width: 50%;
+  background: #1B3A6F;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+
+      .button {
+        background: black;
+        border-radius: 1vw;
+        width: 2vw;
+        height: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        user-select: none;
+        cursor: pointer;
+        margin-left: 0.2vw;
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+
+  .content {
+    background: #234A8E;
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 98%;
+      margin-left: 1%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+
+      .gc-toggle {
+        margin-bottom: 1vw;
+      }
+
+      .redirect-input {
+        margin-left: 3.5vw;
+        width: 60%;
+
+        input {
+          width: 95%;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      height: 4vw;
+      margin-left: 1vw;
+      position: relative;
+
+      textarea {
+        width: 80%;
+        height: 100%;
+        resize: none;
+        font-family: "Gotham Book", serif;
+        font-size: 1vw;
+      }
+
+      .image {
+        width: 80%;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 0.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+        background: #5A78AB no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    .gc-timer {
+      width: 20%;
+      margin-left: 1vw;
+      margin-bottom: 1vw;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 3vw;
+    justify-content: space-between;
+
+    .line {
+      width: 2px;
+      height: 100%;
+      background: white;
+    }
+
+    .button {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

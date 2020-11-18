@@ -1,0 +1,45 @@
+@import "../../../../../../../../../../../../mobile/src/app/utils/utils";
+
+.gc-mobile-question {
+  width: calc(100% - 4px);
+  display: flex;
+  flex-direction: column;
+  background: #0A1C3A;
+  margin-bottom: 2%;
+  border: #458BFF solid 2px;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  align-items: center;
+  padding-bottom: 1vw;
+
+  &.banner-image {
+    padding-top: 13%;
+    border: none;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .text {
+    font-weight: bold;
+    font-size: 0.9vw;
+    text-align: center;
+    width: 90%;
+  }
+
+  .subheader {
+    font-weight: normal;
+    font-size: 0.7vw;
+    text-align: center;
+    width: 90%;
+  }
+
+  .gc-answer-input {
+    width: 50%;
+
+    .gc-input {
+      font-size: 10vw;
+    }
+  }
+}

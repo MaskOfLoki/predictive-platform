@@ -1,0 +1,88 @@
+.gc-ui-settings {
+  width: 100%;
+  background: #1B3A6F;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    background: #234A8E;
+    display: flex;
+    flex-direction: row;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-left: 1vw;
+      margin-top: 1vw;
+      margin-bottom: 1vw;
+
+      .gc-toggle {
+        height: 3vw;
+        font-size: 0.8vw;
+      }
+    }
+
+    .row {
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .gc-color-picker {
+      margin-bottom: 0.5vw;
+
+      .label {
+        width: 15vw;
+      }
+    }
+
+    .gc-logo-selector {
+      width: 12vw;
+      height: 12vw;
+
+      .image {
+        width: 60%;
+      }
+    }
+
+    .group-input {
+      margin-top: 0.5vw;
+      margin-left: 2vw;
+
+      .gc-input {
+        font-size: 1vw;
+        width: 20vw;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 3vw;
+    min-height: 3vw;
+    justify-content: space-between;
+
+    .line {
+      width: 2px;
+      height: 100%;
+      background: white;
+    }
+
+    .button {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

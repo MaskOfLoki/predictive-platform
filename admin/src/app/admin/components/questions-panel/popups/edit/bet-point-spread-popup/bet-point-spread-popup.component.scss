@@ -1,0 +1,50 @@
+@import "../bet-moneyline-popup/bet-moneyline-popup.component";
+
+.gc-bet-point-spread-popup {
+  @extend .gc-bet-moneyline-popup;
+  position: relative;
+
+  .group-tabs {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 1.5vw;
+    top: 1.35vw;
+    left: 37vw;
+
+    .tab {
+      background: #142C53;
+      width: 2vw;
+      height: 100%;
+      padding-top: 4%;
+      text-align: center;
+      border-top-left-radius: 0.4vw;
+      border-top-right-radius: 0.4vw;
+      margin-right: 3%;
+      cursor: pointer;
+
+      &.active {
+        background: #234A8E;
+      }
+    }
+  }
+
+  .group-teams {
+    .spread {
+      color: #FFF000;
+    }
+  }
+
+  .group-spread-odds {
+    display: flex;
+    flex-direction: column;
+
+    .group-input {
+      margin-bottom: 0.5vw;
+
+      label {
+        width: 4vw;
+      }
+    }
+  }
+}

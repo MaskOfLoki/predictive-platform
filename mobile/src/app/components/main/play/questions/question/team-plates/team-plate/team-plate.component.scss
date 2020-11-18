@@ -1,0 +1,87 @@
+.gc-team-plate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #081429;
+  border: solid 2px #458BFF;
+  border-radius: 2vw;
+  width: 30vw;
+  height: 22vw;
+  color: white;
+  cursor: pointer;
+  padding-top: 1%;
+
+  .marker {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    right: -3.5vw;
+    top: -3.5vw;
+  }
+
+  &.selected {
+    border-color: whitesmoke;
+    background: #458BFF;
+  }
+
+  &.correct {
+    border-color: #00B21B;
+
+    .marker {
+      background: url('../../../../../../../../assets/images/correct.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &.wrong {
+    border-color: #BA0000;
+
+    .marker {
+      background: url('../../../../../../../../assets/images/wrong.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &.pushed {
+    border-color: #FFD800;
+  }
+
+  .name {
+    font-size: 3vw;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+    margin-top: 2%;
+
+    .logo {
+      width: 45%;
+      height: 100%;
+      background: no-repeat center;
+      background-size: contain;
+      margin-left: 3%;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      margin-right: 5%;
+
+      .odds {
+        font-weight: bold;
+        font-size: 6vw;
+      }
+
+      .sub {
+        font-size: 2vw;
+      }
+    }
+  }
+}

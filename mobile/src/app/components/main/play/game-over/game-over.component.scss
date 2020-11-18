@@ -1,0 +1,96 @@
+.game-over {
+  width: 100vw;
+  height: calc(88% - 2vw);
+
+  .image {
+    width: 80%;
+    height: 15%;
+    margin-left: 10%;
+    background: no-repeat center;
+    background-size: contain;
+  }
+
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 7vw;
+    width: 80%;
+    margin-left: 10%;
+
+    &:nth-child(1) {
+      font-size: 10vw;
+    }
+  }
+
+  .subtitle {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2vw;
+    font-size: 5vw;
+  }
+
+  .gc-stats {
+    width: 86vw;
+    margin-bottom: 5vw;
+  }
+
+  .grid-leaders {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 10%;
+      background: #153567;
+      opacity: 0;
+      animation: row-appear 0.5s forwards;
+
+      .cell {
+        position: relative;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 4vw;
+        font-weight: bold;
+
+        &.current-user {
+          color: greenyellow;
+        }
+      }
+
+      .cell:nth-child(1) {
+        width: 65%;
+        text-align: left;
+        margin-left: 5%;
+      }
+
+      &.alternate {
+        background: #458BFF;
+      }
+    }
+
+    .header {
+      @extend .row;
+      opacity: 1;
+      animation: none;
+    }
+
+    @keyframes row-appear {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}

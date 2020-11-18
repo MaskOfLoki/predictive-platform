@@ -1,0 +1,75 @@
+.gc-mobile-stats {
+  width: 90%;
+  margin-left: 3%;
+  background: #081429;
+  border: #458BFF solid 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2%;
+  justify-content: space-between;
+
+  .icon {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 2%;
+  }
+
+  .mobile-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .mobile-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      color: #458BFF;
+
+      .icon-dollar {
+        @extend .icon;
+        mask: url("../../../../../../../../assets/images/admin/mobile-preview/dollar.svg") no-repeat center;
+        mask-size: contain;
+        -webkit-mask: url("../../../../../../../../assets/images/admin/mobile-preview/dollar.svg") no-repeat center;
+        -webkit-mask-size: contain;
+      }
+
+      .icon-rank {
+        @extend .icon;
+        mask: url("../../../../../../../../assets/images/admin/mobile-preview/leader.svg") no-repeat center;
+        mask-size: contain;
+        -webkit-mask: url("../../../../../../../../assets/images/admin/mobile-preview/leader.svg") no-repeat center;
+        -webkit-mask-size: contain;
+      }
+
+      .icon-checkmark {
+        @extend .icon;
+        mask: url("../../../../../../../../assets/images/admin/mobile-preview/checkmark.svg") no-repeat center;
+        mask-size: contain;
+        -webkit-mask: url("../../../../../../../../assets/images/admin/mobile-preview/checkmark.svg") no-repeat center;
+        -webkit-mask-size: contain;
+      }
+
+      .label {
+        width: 33%;
+        font-size: 0.6vw;
+      }
+    }
+
+    .line {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background: #458BFF;
+      height: 1px;
+      width: 100%;
+    }
+
+    .value {
+      font-weight: bold;
+      color: white;
+      font-size: 0.8vw;
+    }
+  }
+}

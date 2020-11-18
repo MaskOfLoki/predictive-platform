@@ -1,0 +1,12 @@
+.gc-font-picker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1vw;
+  margin-left: 2vw;
+  font-size: 1vw;
+
+  .title {
+    margin-right: 1vw;
+  }
+}

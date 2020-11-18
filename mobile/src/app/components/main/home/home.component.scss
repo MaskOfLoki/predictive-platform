@@ -1,0 +1,35 @@
+@import "../../../utils/utils";
+
+.home-screen {
+  @extend .base-screen;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+
+  .gc-marketing-message {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
+  }
+
+  .group-buttons {
+    margin-top: 5vw;
+    width: 80%;
+
+    .gc-button {
+      margin-bottom: 5%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      font-size: 7vw;
+    }
+  }
+
+  &.not-started {
+    .group-buttons {
+      margin-top: 40%;
+    }
+  }
+}

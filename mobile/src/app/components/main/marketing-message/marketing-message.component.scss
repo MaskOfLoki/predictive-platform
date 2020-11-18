@@ -1,0 +1,33 @@
+.gc-marketing-message {
+  width: 98%;
+  height: 15vw;
+  background: #0A1C3A;
+  margin-bottom: 2%;
+  border-radius: 1vw;
+  border: #458BFF solid 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .text {
+    max-width: 96%;
+    width: 96%;
+    margin-left: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: white;
+  }
+
+  &.photo {
+    height: fit-content;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.gc-empty-marketing-message {
+  height: 20%;
+}

@@ -1,0 +1,15 @@
+@import "../../utils/utils";
+
+.main-screen {
+  @extend .base-screen;
+  display: flex;
+  flex-direction: column;
+  background: repeat-y center;
+  background-size: cover;
+
+  .main-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 18vw);
+  }
+}

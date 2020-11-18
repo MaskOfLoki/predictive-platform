@@ -1,0 +1,10 @@
+@import "../../../../utils/utils";
+
+.how-to-screen {
+  @extend .base-screen;
+  overflow-y: scroll;
+
+  img {
+    width: 100%;
+  }
+}

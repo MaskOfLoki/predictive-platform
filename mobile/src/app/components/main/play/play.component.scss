@@ -1,0 +1,16 @@
+@import "../../../utils/utils";
+
+.play-screen {
+  @extend .base-screen;
+  width: 100vw;
+  max-width: 100vw;
+  height: calc(100% - 18vw);
+  padding-top: 18vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .gc-marketing-message {
+    width: 95%;
+    margin-left: 2%;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../utils/utils";
+
+.terms-screen {
+  @extend .base-screen;
+  width: 96%;
+  height: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+  overflow-y: scroll;
+
+  p {
+    text-align: justify;
+  }
+}

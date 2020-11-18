@@ -1,0 +1,40 @@
+.live-question-notification-popup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  background: #081429;
+  border: solid 2px #458BFF;
+  border-radius: 2vw;
+  align-items: center;
+
+  .gc-question-header {
+    margin-bottom: 1vw;
+  }
+
+  .title {
+    font-size: 4vw;
+    text-align: center;
+    width: 90%;
+    font-weight: bold;
+    margin-bottom: 3vw;
+  }
+
+  .group-buttons {
+    display: flex;
+    flex-direction: row;
+    height: 10vw;
+    margin-bottom: 2vw;
+    width: 60%;
+    justify-content: space-between;
+
+    .gc-button {
+      width: 45%;
+      font-weight: bold;
+
+      &.dismiss {
+        background: #5F5F5F;
+      }
+    }
+  }
+}

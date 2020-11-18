@@ -1,0 +1,66 @@
+.gc-leaders-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 24vw;
+  width: 30%;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  margin-right: 2vw;
+
+  .group-title {
+    width: 100%;
+    font-size: 1.5vw;
+    color: white;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      margin-left: 0.5vw;
+    }
+  }
+
+  .group-leaders {
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    min-height: 0;
+    border-radius: 0.5vw;
+
+    .leader {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      min-height: 3vw;
+      align-items: center;
+      border-bottom: 0.1vw solid black;
+      justify-content: space-between;
+
+      .username {
+        margin-left: 0.5vw;
+        font-size: 1.5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 0.5vw;
+        text-shadow: none;
+      }
+
+      .bucks {
+        font-size: 1.5vw;
+      }
+    }
+  }
+
+  .gc-button {
+    margin-top: 1vw;
+    font-size: 1vw;
+  }
+}

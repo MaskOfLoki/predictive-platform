@@ -1,0 +1,19 @@
+.gc-feature-toggle {
+  height: 2vw;
+  min-height: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

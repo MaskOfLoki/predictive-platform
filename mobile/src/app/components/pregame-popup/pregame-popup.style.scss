@@ -1,0 +1,24 @@
+@import "../../utils/utils";
+
+.popup-screen {
+  @extend .base-screen;
+
+  .popup-container {
+    position: absolute;
+    width: 75vw;
+    height: 75vh;
+    left: 12.5vw;
+    top: 12.5vh;
+
+    .popup {
+      height: 75%;
+      background: no-repeat center;
+      background-size: contain;
+    }
+
+    .gc-button {
+      height: 7vh;
+      font-size: xx-large;
+    }
+  }
+}

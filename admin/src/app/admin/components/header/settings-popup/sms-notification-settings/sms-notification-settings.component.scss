@@ -1,0 +1,49 @@
+.gc-sms-notification-settings {
+  width: 100%;
+  background: #1B3A6F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 35vw;
+
+  .content {
+    width: 98%;
+    height: 100%;
+    background: #234A8E;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+
+    .label {
+      margin-bottom: 0.5vw;
+    }
+
+    input {
+      height: 2vw;
+      font-size: 1vw;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 3vw;
+    justify-content: space-between;
+
+    .button {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

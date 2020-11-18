@@ -1,0 +1,48 @@
+.gc-header {
+  width: 100%;
+  height: 5vw;
+  background: #1D3C77;
+  box-shadow: 0 0.5vw 2vw black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2%;
+
+  .group-logo {
+    background: url("../../../../assets/images/admin/header/logo-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 10%;
+    height: 100%;
+
+    .logo {
+      background: url("../../../../assets/images/admin/header/logo-gc.png") no-repeat center;
+      background-size: contain;
+      width: 90%;
+      height: 80%;
+      margin-top: 5%;
+    }
+  }
+
+  .title {
+    color: white;
+    font-size: 3vw;
+    margin-left: 2vw;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .settings {
+    background: url("../../../../assets/images/admin/header/settings.svg") no-repeat center;
+    background-size: contain;
+    width: 10%;
+    height: 80%;
+    filter: invert(100);
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

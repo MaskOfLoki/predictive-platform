@@ -1,0 +1,139 @@
+@import "../../utils/utils";
+
+.login-screen {
+  @extend .base-screen;
+  display: flex;
+  flex-direction: column;
+  color: black;
+
+  .group-left {
+    .logo {
+      width: 12vw !important;
+    }
+    .group-logo-info {
+      width: 76vw;
+      text-align: center;
+      font-size: 5vw;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+  .banner-wrapper {
+    width: 100vw;
+    padding: 2%;
+    background-color: black;
+    height: 8vh;
+    .banner-text {
+      text-align: center;
+      color: white;
+      width: 100vw;
+      position: absolute;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 3.5vh;
+    }
+  }
+
+  .timer-wrapper {
+    margin-top: 3vh;
+    .timer-disable {
+      font-size: 5vw;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      margin-top: 5vh;
+      text-align: center;
+    }
+
+    .timer-status {
+      font-size: 8vw;
+    }
+
+    .timer-text {
+      font-size: 12vw;
+      line-height: 11w;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .timer-description {    
+      margin-top: 3vw;
+      font-size: 4vw;
+      font-weight: normal;
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: center;
+      margin-bottom: 6vw;
+    }
+  }
+
+  .group-phone {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    width: 80%;
+
+    span {
+      font-weight: bold;
+      font-size: 4vw;
+      margin-bottom: 3%;
+      text-align: center;
+    }
+
+    .gc-input {
+      border: solid 1px #555;
+      background: #eee;
+      border-radius: 1vw;
+      padding-left: 5%;
+      padding-right: 5%;
+      font-size: 5vw;
+      color: black;
+      line-height: 10vw;
+    }
+
+    .gc-button {    
+      font-size: 5vw;
+      width: 30vw;
+      line-height: 10vw;
+      margin-left: 25vw;
+      margin-top: 5vw;
+    }
+    
+    .gc-login {
+      font-size: 5vw;
+      width: 55vw;
+      line-height: 10vw;
+      margin-left: 12.5vw;
+      margin-top: 5vw;
+    }
+  }
+
+  .group-verify {
+    margin-top: 5vw;
+    @extend .group-phone;
+
+    .info {
+      text-align: center;
+      margin-bottom: 3vw;
+    }
+  }
+
+  .footer-description {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vw;
+    font-size: 4vw;
+    color: grey;
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    a {
+      color:grey;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

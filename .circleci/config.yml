@@ -1,0 +1,48 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - restore_cache:
+          key: cache-{{ checksum "package.json" }}-{{ checksum "admin/package.json" }}-{{ checksum "mobile/package.json" }}
+      - run: yarn
+      - save_cache:
+          key: cache-{{ checksum "package.json" }}-{{ checksum "admin/package.json" }}-{{ checksum "mobile/package.json" }}
+          paths:
+            - node_modules
+            - admin/node_modules
+            - mobile/node_modules
+      - run: yarn lint
+      - run: yarn build
+      - run: |
+          sed -i.bak s/{{BUILD}}/$CIRCLE_BUILD_NUM/g common.ts
+      - run: yarn lint
+      - run: yarn build
+      - run: mv mobile/www predictive-platform
+      - run: cp -r admin/www predictive-platform/admin
+      - store_artifacts:
+          path: predictive-platform
+      - deploy:
+          command: |
+            if [[ $CIRCLE_BRANCH == "develop"* ]]; then
+              NETLIFY_PATH=/${CIRCLE_BRANCH:8}
+              export GC_NETLIFY_DOMAIN=www.xeodevelop.com
+            elif [[ $CIRCLE_BRANCH == "testing"* ]]; then
+              NETLIFY_PATH=/${CIRCLE_BRANCH:8}
+              export GC_NETLIFY_DOMAIN=www.xeotesting.com
+            elif [[ $CIRCLE_BRANCH == "staging"* ]]; then
+              NETLIFY_PATH=/${CIRCLE_BRANCH:8}
+              export GC_NETLIFY_DOMAIN=www.xeostaging.com
+            elif [[ $CIRCLE_BRANCH == "beta"* ]]; then
+              export GC_NETLIFY_DOMAIN=www.xeopreview.com
+            elif [[ $CIRCLE_BRANCH == "master"* ]]; then
+              CIRCLE_BRANCH=master
+              export GC_NETLIFY_DOMAIN=www.xeoclient.com
+            else
+              echo "UNKNOWN BRANCH PREFIX"
+              exit 0
+            fi
+            export GC_NETLIFY_SUBDOMAIN=$CIRCLE_BRANCH
+            npx netlify-deploy --dir=predictive-platform --remote=$NETLIFY_PATH/predictive-platform

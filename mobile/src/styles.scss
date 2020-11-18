@@ -1,0 +1,150 @@
+@import "~nprogress/nprogress.css";
+@import "./app/utils/utils";
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+}
+
+body {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: rgb(238, 238, 238);
+}
+
+.app-root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+
+  * {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    user-select: none;
+    text-decoration: none;
+  }
+}
+
+.popup-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba($color: #000000, $alpha: 0.8);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  color: white;
+}
+
+.loading-overlay {
+  @extend .popup-overlay;
+  cursor: progress;
+  background: rgba($color: #000000, $alpha: 0);
+}
+
+.gc-input {
+  border: solid 1px #555;
+  background: #eee;
+  border-radius: 1vw;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 8vw;
+  color: black;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  color: white;
+  &:visited {
+    color: white;
+  }
+}
+
+.gc-button {
+  background: black;
+  color: white;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.gc-help-tooltip {
+  z-index: 10000;
+  position: absolute;
+  width: 55vw;
+  height: fit-content;
+  border: #091A36 solid 2vw;
+  border-radius: 2vw;
+  background: #458BFF;
+  color: white;
+  font-size: 3vw;
+  font-weight: normal;
+  text-align: justify;
+  padding: 2vw;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+
+  p {
+    margin-block-start: 0;
+  }
+
+  ul {
+    padding-inline-start: 5vw;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 44%;
+    width: 0;
+    height: 0;
+    border-top: 2vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 2vw solid transparent;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

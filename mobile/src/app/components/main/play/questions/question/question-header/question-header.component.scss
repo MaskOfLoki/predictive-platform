@@ -1,0 +1,88 @@
+.gc-question-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 10vw;
+  align-items: center;
+  color: #458BFF;
+  cursor: pointer;
+  font-size: 5vw;
+  justify-content: space-between;
+  margin-bottom: 1vw;
+
+  .group-timer {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    align-items: center;
+    margin-right: 5%;
+    width: 25%;
+
+    .icon-timer {
+      mask: url("../../../../../../../assets/images/icon-timer.svg") no-repeat center;
+      mask-size: contain;
+      -webkit-mask: url("../../../../../../../assets/images/icon-timer.svg") no-repeat center;
+      -webkit-mask-size: contain;
+      width: 10vw;
+      height: 100%;
+    }
+  }
+
+  .locked {
+    margin-right: 5%;
+    width: 25%;
+    text-align: right;
+  }
+
+  .label {
+    margin-right: 1vw;
+    font-size: 2.6vw;
+    min-width: 30%;
+    max-width: 30%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &.empty {
+      min-width: 18%;
+    }
+
+    &.title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &.incorrect {
+      color: #BA0000;
+      font-weight: bold;
+      font-size: 5vw;
+      max-width: fit-content;
+      width: fit-content;
+      text-align: right;
+    }
+
+    &.payout {
+      font-weight: bold;
+      font-size: 5vw;
+      color: #00B21B;
+      max-width: fit-content;
+      width: fit-content;
+      text-align: right;
+    }
+
+    .bucks {
+      font-size: 3vw;
+    }
+
+    &.pushed {
+      font-weight: bold;
+      font-size: 4vw;
+      color: #FFD800;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

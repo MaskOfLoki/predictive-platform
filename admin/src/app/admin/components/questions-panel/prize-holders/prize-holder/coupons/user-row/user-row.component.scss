@@ -1,0 +1,12 @@
+.gc-user-row {
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    margin-right: 1%;
+    pointer-events: none;
+  }
+
+  &.selected {
+    background: #1B3A6F;
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "forin": false,
+    "object-literal-key-quotes": false,
+    "object-literal-sort-keys": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "ordered-imports": false,
+    "arrow-parens": false,
+    "no-bitwise": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "instance-method",
+          "static-method"
+        ]
+      }
+    ],
+    "no-console": [
+      true,
+      "log"
+    ],
+    "no-shadowed-variable": false,
+    "no-string-literal": false,
+    "max-classes-per-file": false,
+    "only-arrow-functions": false,
+    "no-var-requires": false
+  },
+  "rulesDirectory": [],
+  "linterOptions": {
+  "exclude": [
+    "src/*d.ts"
+  ]
+}
+}

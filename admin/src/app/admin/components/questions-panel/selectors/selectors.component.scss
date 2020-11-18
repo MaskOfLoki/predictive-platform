@@ -1,0 +1,64 @@
+.gc-questions-selectors {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+
+  .group-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1%;
+
+    .disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    label {
+      width: 15%;
+    }
+
+    select {
+      color: white;
+      background: black;
+      padding: 1%;
+      width: 85%;
+      border: none;
+      border-radius: 0.5vw;
+
+      &:invalid {
+        color: gray;
+      }
+
+      &:after {
+        border-radius: 0.5vw;
+      }
+    }
+
+    .button-add {
+      font-family: "Gotham Book", serif;
+      cursor: pointer;
+      font-size: 2vw;
+      margin-left: 1vw;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+
+    .button-edit {
+      @extend .button-add;
+      background: url("../../../../../assets/images/admin/edit.svg") no-repeat center;
+      background-size: contain;
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+
+    .button-delete {
+      @extend .button-edit;
+      background: url("../../../../../assets/images/admin/remove.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+}

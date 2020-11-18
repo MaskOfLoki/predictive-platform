@@ -1,0 +1,42 @@
+.gc-feature-settings {
+  width: 100%;
+  background: #1b3a6f;
+  display: flex;
+  flex-direction: column;
+  height: 50vw;
+  max-height: 50vw;
+
+  .content {
+    background: #234a8e;
+    height: 100%;
+    overflow: auto;
+
+    .gc-accordion {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 1%;
+
+      &.open {
+        overflow-y: auto;
+      }
+    }
+
+    .gc-feature-toggle {
+      width: 80%;
+      margin-left: 10%;
+      margin-bottom: 1%;
+
+      .gc-input {
+        width: 40%;
+      }
+
+      .gc-textarea {
+        height: 3vh;
+
+        &.disclaimer {
+          height: 12vh;
+        }
+      }
+    }
+  }
+}

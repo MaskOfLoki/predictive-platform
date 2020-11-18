@@ -1,0 +1,13 @@
+.gc-team-plates {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+  color: #458BFF;
+  margin-top: 3%;
+
+  .vs {
+    font-weight: bold;
+  }
+}
